@@ -1,9 +1,80 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>Faips Panorma<title>
-<head>
-<body>
-    <h1> Starting the website yay! </h1>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<link rel="icon" type="image/png" href="https://www.faipskuwait.com/templates/jsn_educo/images/logo-footer.png"/>
+	<title>FAIPS PANORAMA</title>
+	<style type="text/css">
+		.mdl-layout {
+		  align-items: center;
+		  justify-content: center;
+		}
+	</style>
+</head>
+
+<body  style="background-image: url('https://i.imgur.com/LcSGnKgl.png');background-position: right; background-attachment: fixed;background-size: 50%">
+	<div class="mdl-layout">
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-shadow--2dp through mdl-shadow--16dp" style="width:50%;">
+		  <div class="mdl-layout__drawer mdl-shadow--2dp through mdl-shadow--16dp" style="width:100%;">
+		    <div class="mdl-layout">
+
+		    	<h1>Coming Soon!
+		    	<p align="center">Good things take time!</p></h1>
+		    	<br>
+		    	<a class="typeform-share link" href="https://form.typeform.com/to/in7SPFdC" data-mode="popup" style="color:#5800D8;text-decoration:underline;font-size:23px;" id="tt3" data-hide-headers=true data-hide-footer=true data-submit-close-delay="0" target="_blank">Subscribe to our mailing list!
+		    	</a>
+		    	<script>
+		    	(function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()
+		    	</script>
+		    	<div class="mdl-tooltip" data-mdl-for="tt3">
+					Stay notified for release!
+				</div>
+		    	<h4 id="demo"></h4>
+				<script>
+				// Set the date we're counting down to
+				var countDownDate = new Date("June 28, 2020 00:00:00").getTime();
+
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+
+				  // Get today's date and time
+				  var now = new Date().getTime();
+
+				  // Find the distance between now and the count down date
+				  var distance = countDownDate - now;
+
+				  // Time calculations for days, hours, minutes and seconds
+				  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				  // Display the result in the element with id="demo"
+				  document.getElementById("demo").innerHTML = days + " days, " + hours + " hours, "
+				  + minutes + " minutes, " + seconds + " seconds. ";
+
+				  // If the count down is finished, write some text
+				  if (distance < 0) {
+				    clearInterval(x);
+				    document.getElementById("demo").innerHTML = "EXPIRED";
+				  }
+				}, 1000);
+				</script>
+				<div id="p3" class="mdl-progress mdl-js-progress"></div>
+				<script>
+				  document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
+				    this.MaterialProgress.setProgress(33);
+				    this.MaterialProgress.setBuffer(87);
+				  });
+				</script>
+		    </div>
+		  </div>
+		  <main class="mdl-layout__content">
+		    <div class="page-content">
+
+		    </div>
+		  </main>
+		</div>
+	</div>
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </body>
-</html>
