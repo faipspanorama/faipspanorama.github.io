@@ -14,6 +14,10 @@
     	<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
       	</script> 
 		<style>
+			.brand-logo{
+				font-weight: bold;
+				font: normal 32px 'Cookie', cursive;
+			}
 			.poetry{
 				background-image: url("shake.png");
 				background-size: 30%;
@@ -43,6 +47,16 @@
 				height: 45em;
 				margin: 1.5%;
 			}
+			.editors{
+				background-color: rgba(95, 158, 160, 0.404);
+				padding-left: 8px;
+				padding-right: 8px;
+				padding-bottom: 8px;
+				color: 403838;
+				margin: 1.5%;
+				text-align: center;
+				font-family: Arial, Helvetica, sans-serif;
+			}
 			h1.hart {
 				font-size: 7em;
 				margin: 0;
@@ -64,11 +78,11 @@
 			.siteFooterBar {
 				position: fixed;
 				bottom: 0;
-				padding-top:0%;
+				padding-top: 0%;
 				width: 100%;
-				box-shadow: 0% 0% 10% rgb(207, 207, 207);
-				height: 6.5%;
-				color: #f8bfcf;
+				box-shadow: 0px 0px 25px rgb(207, 207, 207);
+				height: 8%;
+				color: #ffffff;
 				background: rgba(29, 50, 113, 1.0);
 			}
 
@@ -82,8 +96,10 @@
 				width:10%;
 			}
 			.foot {
+				font-weight: bold;
+				font: normal 36px 'Cookie', cursive;
 				display:inline;
-				line-height: 10%;
+				line-height: 70px;
 				margin: 0;
 			}
 			.content img {
@@ -115,9 +131,8 @@
 				width: 100%;
 				text-align: left;
 				font: bold 16px sans-serif;
-			
 				padding: 1% 1%;
-				margin-top: 100%;
+				margin-top: 55%;
 			}
 			
 			.footer-distributed .footer-left,
@@ -207,7 +222,7 @@
 			.footer-distributed .footer-right{
 				width: 20%;
 			}
-			
+
 			.footer-distributed .footer-company-about{
 				line-height: 20px;
 				color:  #92999f;
@@ -278,16 +293,17 @@
 	</head>
 	<body>
 		<ul id = "dropdown" class = "dropdown-content">
-			<li><a href="#!">one</a></li>
-			<li><a href="#!">two</a></li>
-			<li class="divider"></li>
-			<li><a href="#!">three</a></li>
+			<li><a href="#!">Editorial Articles</a></li>
+			<li><a href="#!">Competition Reports</a></li>
+			<li><a href="#!">English</a></li>
+			<li><a href="#!">Hindi</a></li>
+			<li><a href="#!">French</a></li>
 		  </ul>
 		<nav>
-			<div class="nav-wrapper">
-				<img src = "logoGrp.png" width=56 height=56>
-			  <a href="#" class="brand-logo">Panorama</a>
-			  <ul id="nav-mobile" class="right hide-on-med-and-down">
+			<div class="nav-wrapper" style="padding-top: 20px;padding-bottom: 20px;padding-left: 20px;">
+				<img src = "logoGrp.png" width=36 height=36>
+			  <a href="#" class="brand-logo" >Panorama</a>
+			  <ul id="nav-mobile" class="right hide-on-med-and-down" style="justify-content: center;">
 				<li><a href="indexhtml"></a></li>
 				<li><a href="articles.html"></a></li>
 				<li><a href="poetry.html"></a></li>
@@ -308,18 +324,60 @@
 				<li><a href="poetry.html"></a></li>
 				<li><a href="edu.html"></a></li>
 				<li><a href="About.html"></a></li>
-				<li><a href="indexhtml">Home</a></li>
-				<li><a class = "btn dropdown-button" href = "#" data-activates = "dropdown">Articles</a></li>
-				<li><a href="poetry.html">Poetry</a></li>
-				<li><a href="edu.html">Edu</a></li>
-				<li><a href="About.html">About</a></li>
+				<li><a class = "btn dropdown-button" href="indexhtml" style="background-color: #1d2371;">Home</a></li>
+				<li><a class = "btn dropdown-button" href = "#" data-activates = "dropdown" style="background-color: #1d2371;" st>Articles</a></li>
+				<li><a class = "btn dropdown-button" href="poetry.html" style="background-color: #1d2371;">Poetry</a></li>
+				<li><a class = "btn dropdown-button" href="edu.html" style="background-color: #1d2371;">Interviews</a></li>
+				<li><a class = "btn dropdown-button" href="About.html" style="background-color: #1d2371;">About</a></li>
 				
 			  </ul>
 			</div>
 		  </nav>
 		  <article>
-			  <img src="mainCover.png" width="100%" height="90%" alt="MainCover">
+			  <img src="mainCover.png" width="100%" alt="MainCover">
 		  </article>
+		  <div class="editors" width="90%" height="50%">
+			<p>
+			  <h1 class="edit">From the Editor's Desk</h1>	  
+			</p>
+			<img src="their circular cropped pic" alignment="left">
+			
+			<img src="their circular cropped pic" alignment="right">
+			<br>
+			<p>
+				Greetings!!</p><p>
+It is our privilege and honour as Editors in Chief to introduce the first issue
+of FAIPS Panorama - a magazine put together by the students of FAIPS.
+Not too long ago,around 4 months back,we were informed our school
+would be closed and we realized we might not be meeting in person for a
+few days or weeks.Since then though, it’s become clear that this could be a
+much longer haul.These unprecedented,unnerving times may go on and
+on.<p>
+However,we were determined.It is said, “When one door closes, another
+one opens”. Our editorial team found the open door amidst this pandemic
+which has held the world in a standstill.</p><p>
+Even though we could not meet you ‘physically’, we found means to
+communicate with you virtually to answer your queries and receive your
+contributions for this magazine. We are amazed, to say the least, by the
+immense number of articles, poems and stories we have received.</p>
+<p>
+	For this, we would like to thank our respected teachers for giving us such a
+wonderful opportunity to produce this magazine, for constantly encouraging
+us to give our best and for guiding us throughout the process of publishing.
+Moreover, this magazine is not the outcome of the efforts put in by one
+student alone, but it is the hard work put forward by our editorial team as a
+whole. We feel blessed to have had the opportunity to work with such
+talented individuals. To the entire art and graphics team, thank you for
+putting up with our midnight Zoom calls and last minute demands. To all
+our managing and assistant editors, thank you for helping us go through
+the millions of contributions we received and editing them with absolute
+sincerity. This magazine would not have been what it is without your
+creativity and ideas. </p>
+<p>We have all put in our best to make this magazine entertaining and
+congenial to you all. We hope you enjoy it. Happy Reading !</p>
+<p>Regards,
+			</p>
+		</div>
 		  <div class="poetry">
 			  <h1 class="hpot">Poetry</h1><p>
 				  
@@ -329,23 +387,8 @@
 			  <p>
 				<h1 class="hart">Articles</h1>	  
 			  </p>
-		  </div>
-		  <div class="editors" width="90%" height="50%">
-			<p>
-			  <h1 class="edit">From the Editor's Desk</h1>	  
-			</p>
-			<img src="their circular cropped pic" alignment="left">
-			<p>
-				<b> Aaminah (title) : </b> Her stuff
-			</p>
-			<br>
-			<img src="their circular cropped pic" alignment="right">
-			<p>
-				<b> Agiya (title) : </b> Her stuff
-			</p>
-		</div>
-		  
-		  <div class="siteFooterBar">
+		  </div>		  
+		<div class="siteFooterBar">
 			<div class="content">
 				<img src="logoMain.png" alignment="middle">
 					<div class="foot">Panorama</div><br>
@@ -373,12 +416,12 @@
 	 
 			<div class="footer-center">
 				<div>
-					<p><span>Web-Styling, Graphic Production Management, PDF Production Management, Web Production</span>Aditya Rengaraj</p>
+					<p><span>Web-Styling, Graphic Production Management, PDF Production Management, Web Production</span>Aditya Rengarajan</p>
 					</div>
 					<br>
 	 
 			<div>
-			<p><span>PDF Production</span> Shreesh Anantharaj, Roma Kondereddy & Aditya Rengaraj</p>
+			<p><span>PDF Production</span> Shreesh Anantharaj, Roma Kondereddy & Aditya Rengarajan</p>
 			</div>
 			<br>
 			
