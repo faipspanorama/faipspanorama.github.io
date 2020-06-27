@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+        <style>
+            .pics { 
+                border-color: black;
+                border-width: 10px;
+                height: 100%;  
+                width: 100%;  
+                padding: 0;  
+                margin:  0 auto; 
+            } 
+ 
+            .pics img {  
+                width:  100%; 
+                height: 100% 
+            } 
+        </style>
+        <script>
+            $(document).ready(function (){
+                $('.pics').cycle({
+                    fx:'shuffle',
+                    delay: -2000
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="pics" alignment="middle">
+	 		
+                <img src="./images-graphics/id-cards/aaditya.png">
+                <img src="./images-graphics/id-cards/aaminah.png">
+                <img src="./images-graphics/id-cards/aariz.png">
+                <img src="./images-graphics/id-cards/abbas.png">
+                <img src="./images-graphics/id-cards/aditya.png">
+                <img src="./images-graphics/id-cards/agiya.png">
+                <img src="./images-graphics/id-cards/ananya.png">
+                <img src="./images-graphics/id-cards/anshel.png">
+                <img src="./images-graphics/id-cards/aryan.png">
+                <img src="./images-graphics/id-cards/erica.png">
+                <img src="./images-graphics/id-cards/mishaal.png">
+                <img src="./images-graphics/id-cards/punnya.png">
+                <img src="./images-graphics/id-cards/rohita.png">
+                <img src="./images-graphics/id-cards/roma.png">
+                <img src="./images-graphics/id-cards/sanjna.png">
+                <img src="./images-graphics/id-cards/shreesh.png">
+       </div>
+        </div>
+        
+    </body>
+</html>
