@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=0.1">
 		<title>The Faips Panorama</title>
 		<link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
@@ -8,9 +9,10 @@
 		<!--Import Google Icon Font-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
-    	<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
-      	</script> 
+		<!--<script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>  -->         
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
+		<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+	    <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
 	<script type="text/javascript">
   	  $(window).on('load resize',function(){
   	      if($(window).width() < 5){
@@ -29,19 +31,33 @@
 				    .end()
 				    .appendTo('#slideshow');
 				}, 3000);
-	 		</script>
+			 </script>
+			 <script>
+				$(document).ready(function (){
+					$('.pics').cycle({
+						fx:'shuffle',
+						delay: -2000
+					});
+				});
+			</script>
 		<style>
-			#slideshow { 
-			    margin: 50px auto; 
-			    position: relative; 
-			    width: 75%;  
-			    padding: 10px;
+			.editorMain{
+				text-align: center;
 			}
-
-			#slideshow > div { 
-			    position: absolute; 
-			    align-items: :center;
+			.pics { 
+                border-color: black;
+                border-width: 10px;
+                height: 100%;  
+                width: 100%;  
+                padding: 0;  
+                margin:  0 auto; 
+            } 
+ 
+            .pics img {  
+                width:  100%; 
+                height: 100% 
 			}
+			
 			.brand-logo{
 				font-weight: bold;
 				font: normal 32px 'Cookie', cursive;
@@ -162,7 +178,7 @@
 				text-align: left;
 				font: bold 16px sans-serif;
 				padding: 1% 1%;
-				margin-top: 55%;
+				margin-top: 5%;
 			}
 			
 			.footer-distributed .footer-left,
@@ -365,116 +381,36 @@
 		  <article>
 			  <img src="./images-graphics/mainCover.png" width="100%" alt="MainCover">
 		  </article>
-		  <div class="editors" width="90%" height="50%">
-			<p>
-			  <h1 class="edit">From the Editor's Desk</h1>	  
-			</p>
-			<img src="their circular cropped pic" alignment="left">
-			
-			<img src="their circular cropped pic" alignment="right">
-			<br>
-			<p>
-				Greetings!!</p><p>
-It is our privilege and honour as Editors in Chief to introduce the first issue
-of FAIPS Panorama - a magazine put together by the students of FAIPS.
-Not too long ago,around 4 months back,we were informed our school
-would be closed and we realized we might not be meeting in person for a
-few days or weeks.Since then though, it’s become clear that this could be a
-much longer haul.These unprecedented,unnerving times may go on and
-on.<p>
-However,we were determined.It is said, “When one door closes, another
-one opens”. Our editorial team found the open door amidst this pandemic
-which has held the world in a standstill.</p><p>
-Even though we could not meet you ‘physically’, we found means to
-communicate with you virtually to answer your queries and receive your
-contributions for this magazine. We are amazed, to say the least, by the
-immense number of articles, poems and stories we have received.</p>
-<p>
-	For this, we would like to thank our respected teachers for giving us such a
-wonderful opportunity to produce this magazine, for constantly encouraging
-us to give our best and for guiding us throughout the process of publishing.
-Moreover, this magazine is not the outcome of the efforts put in by one
-student alone, but it is the hard work put forward by our editorial team as a
-whole. We feel blessed to have had the opportunity to work with such
-talented individuals. To the entire art and graphics team, thank you for
-putting up with our midnight Zoom calls and last minute demands. To all
-our managing and assistant editors, thank you for helping us go through
-the millions of contributions we received and editing them with absolute
-sincerity. This magazine would not have been what it is without your
-creativity and ideas. </p>
-<p>We have all put in our best to make this magazine entertaining and
-congenial to you all. We hope you enjoy it. Happy Reading !</p>
-<p>Regards,
-			</p></p>
-		</div>
-
-	 	<div id="slideshow">
+		  <br>
+		  <div class="parent">
+            <div class="pics" alignment="middle">
 	 		
-			   <div>
-			     <img src="./images-graphics/id-cards/aaditya.png" align="center" width=75%>
-			   </div>
-			   <div>
-			     <img src="./images-graphics/id-cards/aaminah.png" align="center" width=75%>
-			   </div>
-			   <div>
-			     <img src="./images-graphics/id-cards/aariz.png" align="center" width=75%>
-			   </div>
-			   <div>
-			     <img src="./images-graphics/id-cards/abbas.png" align="center" width=75%>
-			   </div>
-			   <div>
-			     <img src="./images-graphics/id-cards/aditya.png" align="center" width=75%>
-			   </div>
-			   <div>
-			     <img src="./images-graphics/id-cards/agiya.png" align="center" width=75%>
-			   </div>
-			   <div>
-			     <img src="./images-graphics/id-cards/ananya.png" align="center" width=75%>
-			   </div>
-			   <div>
-			     <img src="./images-graphics/id-cards/anshel.png" align="center" width=75%>
-			   </div>
-			   <div>
-			     <img src="./images-graphics/id-cards/aryan.png" align="center" width=75%>
-			   </div>
-			   <div>
-			     <img src="./images-graphics/id-cards/erica.png" align="center" width=75%>
-			   </div>
-			   <div>
-			     <img src="./images-graphics/id-cards/mishaal.png" align="center" width=75%>
-			   </div>
-			   <div>
-			     <img src="./images-graphics/id-cards/punnya.png" align="center" width=75%>
-			   </div>
-			   <div>
-			     <img src="./images-graphics/id-cards/rohita.png" align="center" width=75%>
-			   </div>
-			   <div>
-			     <img src="./images-graphics/id-cards/roma.png" align="center" width=75%>
-			   </div>
-			   <div>
-			     <img src="./images-graphics/id-cards/sanjna.png" align="center" width=75%>
-			   </div>
-			   <div>
-			     <img src="./images-graphics/id-cards/shreesh.png" align="center" width=75%>
-			   </div>
+                <img src="./images-graphics/id-cards/aaditya.png">
+                <img src="./images-graphics/id-cards/aaminah.png">
+                <img src="./images-graphics/id-cards/aariz.png">
+                <img src="./images-graphics/id-cards/abbas.png">
+                <img src="./images-graphics/id-cards/aditya.png">
+                <img src="./images-graphics/id-cards/agiya.png">
+                <img src="./images-graphics/id-cards/ananya.png">
+                <img src="./images-graphics/id-cards/anshel.png">
+                <img src="./images-graphics/id-cards/aryan.png">
+                <img src="./images-graphics/id-cards/erica.png">
+                <img src="./images-graphics/id-cards/mishaal.png">
+                <img src="./images-graphics/id-cards/punnya.png">
+                <img src="./images-graphics/id-cards/rohita.png">
+                <img src="./images-graphics/id-cards/roma.png">
+                <img src="./images-graphics/id-cards/sanjna.png">
+                <img src="./images-graphics/id-cards/shreesh.png">
+       </div>
 		</div>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		  <div class="poetry">
-			  <h1 class="hpot">Poetry</h1><p>
-				  
-			  </p>
-		  </div>
-		  <div class="articles">
-			  <p>
-				<h1 class="hart">Articles</h1>	  
-			  </p>
-		  </div>		  
+		<br><br>
+		<div class="editorMain" height="70%">
+			<img src="./images-graphics/editors.png" width="70%">
+		</div>
 		<div class="siteFooterBar">
 			<div class="content">
 				<img src="./images-graphics/logoMain.png" alignment="middle">
 					<div class="foot">Panorama</div><br>
-					
 			</div>
 		</div>
 		<footer class="footer-distributed">
@@ -483,50 +419,28 @@ congenial to you all. We hope you enjoy it. Happy Reading !</p>
 	 
 				<img src="./images-graphics/logoMain.png" alignment="middle"><h3>Panorama</h3>
 	 
-			<p class="footer-links">
-			<a href="#">Home</a>
-		·
-			<a href="#">Articles</a>
-		·
-			<a href="#">Poems</a>
-		·
-			<a href="#">About</a>
-			</p>
+			
 	 
 			<p class="footer-company-name">thefaipspanorama &copy; 2020</p>
 			</div>
 	 
 			<div class="footer-center">
 				<div>
-					<p><span>Web-Styling, Graphic Production Management, PDF Production Management, Web Production</span>Aaditya Rengarajan</p>
-					</div>
-					<br>
-	 
+					<p><span>Project Management</span> Aaminah Alam</p>
+				</div>
+				<br>
+				<div>
+					<p><span>Website Design and Development</span> Mishaal Kandapath & Aaditya Rengarajan</p>
+				</div>
+				<br>
+				<div>
+					<p><span>Graphics & Digital Art</span> Shreesh Anantharaj</p>
+				</div>
+				<br>
 			<div>
 			<p><span>PDF Production</span> Shreesh Anantharaj, Roma Kondereddy & Aaditya Rengarajan</p>
 			</div>
 			<br>
-			
-
-			<div>
-				<p><span>Website Design and Development</span> Mishaal Kandapath</p>
-			</div>
-			<br>
-
-			<div>
-				<p><span>Graphics & Digital Art</span> Shreesh Anantharaj</p>
-			</div>
-			<br>
-			<div>
-				<p><span>Project Management</span> Aaminah Alam</p>
-			</div>
-			<br>
-
-	 
-			<!--<div>
-			<i class="fa fa-envelope"></i>
-			<p><a href="mailto:support@company.com">contact@webdevtrick.com</a></p>
-			</div>-->
 	 
 			</div>
 	 
