@@ -6,6 +6,7 @@
 		<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">-->
 		<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 		<!--Import Google Icon Font-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
     	<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
@@ -17,7 +18,30 @@
     	    }
     });
 </script>
+<script>
+						 			$("#slideshow > div:gt(0)").hide();
+
+				setInterval(function() {
+				  $('#slideshow > div:first')
+				    .fadeOut(1000)
+				    .next()
+				    .fadeIn(1000)
+				    .end()
+				    .appendTo('#slideshow');
+				}, 3000);
+	 		</script>
 		<style>
+			#slideshow { 
+			    margin: 50px auto; 
+			    position: relative; 
+			    width: 75%;  
+			    padding: 10px;
+			}
+
+			#slideshow > div { 
+			    position: absolute; 
+			    align-items: :center;
+			}
 			.brand-logo{
 				font-weight: bold;
 				font: normal 32px 'Cookie', cursive;
@@ -382,8 +406,61 @@ creativity and ideas. </p>
 <p>We have all put in our best to make this magazine entertaining and
 congenial to you all. We hope you enjoy it. Happy Reading !</p>
 <p>Regards,
-			</p>
+			</p></p>
 		</div>
+
+	 	<div id="slideshow">
+	 		
+			   <div>
+			     <img src="./images-graphics/id-cards/aaditya.png" align="center" width=75%>
+			   </div>
+			   <div>
+			     <img src="./images-graphics/id-cards/aaminah.png" align="center" width=75%>
+			   </div>
+			   <div>
+			     <img src="./images-graphics/id-cards/aariz.png" align="center" width=75%>
+			   </div>
+			   <div>
+			     <img src="./images-graphics/id-cards/abbas.png" align="center" width=75%>
+			   </div>
+			   <div>
+			     <img src="./images-graphics/id-cards/aditya.png" align="center" width=75%>
+			   </div>
+			   <div>
+			     <img src="./images-graphics/id-cards/agiya.png" align="center" width=75%>
+			   </div>
+			   <div>
+			     <img src="./images-graphics/id-cards/ananya.png" align="center" width=75%>
+			   </div>
+			   <div>
+			     <img src="./images-graphics/id-cards/anshel.png" align="center" width=75%>
+			   </div>
+			   <div>
+			     <img src="./images-graphics/id-cards/aryan.png" align="center" width=75%>
+			   </div>
+			   <div>
+			     <img src="./images-graphics/id-cards/erica.png" align="center" width=75%>
+			   </div>
+			   <div>
+			     <img src="./images-graphics/id-cards/mishaal.png" align="center" width=75%>
+			   </div>
+			   <div>
+			     <img src="./images-graphics/id-cards/punnya.png" align="center" width=75%>
+			   </div>
+			   <div>
+			     <img src="./images-graphics/id-cards/rohita.png" align="center" width=75%>
+			   </div>
+			   <div>
+			     <img src="./images-graphics/id-cards/roma.png" align="center" width=75%>
+			   </div>
+			   <div>
+			     <img src="./images-graphics/id-cards/sanjna.png" align="center" width=75%>
+			   </div>
+			   <div>
+			     <img src="./images-graphics/id-cards/shreesh.png" align="center" width=75%>
+			   </div>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		  <div class="poetry">
 			  <h1 class="hpot">Poetry</h1><p>
 				  
