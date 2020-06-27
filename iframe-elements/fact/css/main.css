@@ -1,0 +1,79 @@
+/* set sizing to border method */
+html {
+    box-sizing:border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+/* set maximum and minimum widths for the body and centre within the viewprt */
+body {
+
+    font-family: sans-serif
+    margin: 0px;
+    max-width: 512px;
+    min-width: 256px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+/* adding background */
+
+html {
+    
+}
+/* header */
+header {
+    border: 2px solid white;
+    background-color: 2px solid white;
+    border-radius: 20px;
+ 
+    margin-right: -875px;
+     }
+header p {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+header h6 {
+    font-size: 16px;
+    text-align: right;
+}
+/* menu */
+nav ul {
+    list-style-type: none;
+    background-color: #f8bfcf;
+    border: 0px;
+    border-radius: 10px;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 16px;
+     margin-left: auto;
+    margin-right: auto;
+    position: relative;
+     }
+nav ul li {
+    display: inline;
+    border-right: 2px solid #111111;
+    padding-right: 8px;
+    padding-left: 8px;
+    position: inherit;
+}
+nav ul li:last-child {
+    border-right: none;
+    color: #111111;
+    position: inherit;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #111111;
+    position: inherit;
+}
+nav li.selected {
+    color: #606060;
+    position: inherit;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}

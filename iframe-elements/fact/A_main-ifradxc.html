@@ -1,9 +1,324 @@
 <html>
         <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=0.1">
+          <title>The Faips Panorama</title>
+          <link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
+          <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">-->
+          <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+          <!--Import Google Icon Font-->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <!--<script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>  -->         
+          <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
+          <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+	        <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
             <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
             <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
             <style>
+              .editorMain{
+              text-align: center;
+            }
+            .pics { 
+                      border-color: black;
+                      border-width: 10px;
+                      height: 100%;  
+                      width: 100%;  
+                      padding: 0;  
+                      margin:  0 auto; 
+                  } 
+      
+                  .pics img {  
+                      width:  100%; 
+                      height: 100% 
+            }
+            
+            .brand-logo{
+              font-weight: bold;
+              font: normal 32px 'Cookie', cursive;
+            }
+            .poetry{
+              background-image: url("./images-graphics/shake.png");
+              background-size: 30%;
+              background-repeat: no-repeat;
+              background-position: center;
+              justify-content: center;
+              text-align: center;
+              background-color: rgba(231, 184, 159, 0.8);
+              border-radius: 1%;
+              width: 48%;
+              height: 48%;
+              margin: 1%;
+              float: left;
+            }
+            .articles{
+              background-image: url("./images-graphics/shake.png");
+              background-size: 30%;
+              background-repeat: no-repeat;
+              background-position: center;
+              text-align: center;
+              padding:"0px 0px 0px 0px";
+              float: left;
+              display: inline-block;
+              background-color: rgba(29, 50, 113, 0.3);
+              border-radius: 1%;
+              width: 48%;
+              height:48%;
+              margin: 1%;
+            }
+            .editors{
+              background-color: rgba(95, 158, 160, 0.404);
+              padding-left: 8px;
+              padding-right: 8px;
+              padding-bottom: 8px;
+              color: 403838;
+              margin: 1.5%;
+              text-align: center;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            h1.hart {
+              font-size: 500%;
+              margin: 0;
+              padding-top: 2%;
+              padding-right: 1.6em;
+              padding-left: 1.6em;
+              color:#403838;
+            }
+            h1.hpot {
+              font-size: 500%;
+              margin: 0;
+              padding-right: 1.6em;
+              padding-top: 2%;
+              padding-left: 1.6em;
+              color:#403838;
+              opacity: 1.0;
+            }
+            img.chake{
+              vertical-align: -webkit-baseline-middle;
+            }
+            .siteFooterBar {
+              position: fixed;
+              bottom: 0;
+              padding-top: 0%;
+              width: 100%;
+              box-shadow: 0px 0px 25px rgb(207, 207, 207);
+              height: 8%;
+              color: #ffffff;
+              background: rgba(29, 50, 113, 1.0);
+            }
+
+            .content {
+              display: block;
+              padding: 0%;
+              margin: 0% auto;
+              text-align: center;
+              font: 5% Georgia, "Times New Roman", Times, serif;
+              font-size: 5%;
+              width:10%;
+            }
+            .foot {
+              font-weight: bold;
+              font: normal 36px 'Cookie', cursive;
+              display:inline;
+              line-height: 70px;
+              margin: 0;
+            }
+            .content img {
+              height:100%;
+              width:50%;
+              float:left;
+            }
+
+            body {
+              margin: 0;
+              padding: 0;
+            }
+            .main {
+              max-height: 100%;
+              background-color: #292c2f;
+              color: white;
+              font-size: 30%;
+              text-align: center;
+              line-height: 75%;
+            }
+            footer{
+              position: relative;
+              bottom: 0%;
+            }
+            .footer-distributed{
+              background-color:rgba(29, 50, 113, 1.0);
+              box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+              box-sizing: border-box;
+              width: 100%;
+              text-align: left;
+              font: bold 16px sans-serif;
+              padding: 1% 1%;
+              margin-top: 5%;
+            }
+            
+            .footer-distributed .footer-left,
+            .footer-distributed .footer-center,
+            .footer-distributed .footer-right{
+              display: inline-block;
+              vertical-align: top;
+            }
+            
+            .footer-distributed .footer-left{
+              width: 40%;
+            }
+            
+            .footer-distributed h3{
+              color:  #ffffff;
+              font: normal 300% 'Cookie', cursive;
+              margin: 0;
+            }
+            
+            .footer-distributed h3 span{
+              color:  #5383d3;
+            }
+            
+            
+            .footer-distributed .footer-links{
+              color:  #ffffff;
+              margin: 1% 0 1%;
+              padding: 0;
+            }
+            
+            .footer-distributed .footer-links a{
+              display:inline-block;
+              line-height: 1.8;
+              text-decoration: none;
+              color:  inherit;
+            }
+            
+            .footer-distributed .footer-company-name{
+              color:  #8f9296;
+              font-size: 75%;
+              font-weight: normal;
+              margin: 0;
+            }
+            
+            
+            .footer-distributed .footer-center{
+              width: 50%;
+            }
+            
+            .footer-distributed .footer-center i{
+              background-color:  #33383b;
+              color: #ffffff;
+              font-size: 25px;
+              width: 38px;
+              height: 38px;
+              border-radius: 50%;
+              text-align: center;
+              line-height: 42px;
+              margin: 10px 15px;
+              vertical-align: middle;
+            }
+            
+            .footer-distributed .footer-center i.fa-envelope{
+              font-size: 17px;
+              line-height: 38px;
+            }
+            
+            .footer-distributed .footer-center p{
+              display: inline-block;
+              color: #ffffff;
+              vertical-align: middle;
+              margin:0;
+            }
+            
+            .footer-distributed .footer-center p span{
+              display:block;
+              font-weight: normal;
+              font-size:14px;
+              line-height:2;
+            }
+            
+            .footer-distributed .footer-center p a{
+              color:  #5383d3;
+              text-decoration: none;;
+            }
+            
+            .footer-distributed .footer-right{
+              width: 20%;
+            }
+
+            .footer-distributed .footer-company-about{
+              line-height: 20px;
+              color:  #92999f;
+              font-size: 13px;
+              font-weight: normal;
+              margin: 0;
+            }
+            
+            .footer-distributed .footer-company-about span{
+              display: block;
+              color:  #ffffff;
+              font-size: 14px;
+              font-weight: bold;
+              margin-bottom: 20px;
+            }
+            
+            .footer-distributed .footer-icons{
+              margin-top: 25px;
+            }
+            
+            .footer-distributed .footer-icons a{
+              display: inline-block;
+              width: 35px;
+              height: 35px;
+              cursor: pointer;
+              background-color:  #33383b;
+              border-radius: 2px;
+            
+              font-size: 20px;
+              color: #ffffff;
+              text-align: center;
+              line-height: 35px;
+            
+              margin-right: 3px;
+              margin-bottom: 5px;
+            }
+            
+            
+            @media (max-width: 80%) {
+            
+              .footer-distributed{
+                font: bold 14px sans-serif;
+              
+              }
+            
+              .footer-distributed .footer-left,
+              .footer-distributed .footer-center,
+              .footer-distributed .footer-right{
+                display: block;
+                width: 100%;
+                margin-bottom:10%;
+                text-align: center;
+              }
+            
+              .footer-distributed .footer-center i{
+                margin-left: 0;
+              }
+              .main {
+                line-height: normal;
+                font-size: auto;
+              }
+            
+            }
+              .mdl-layout {
+                align-items: center;
+                justify-content: top;
+              }
+              .demo-card-wide.mdl-card {
+                width: 75%;
+                min-height: 45%
+              }
+              .demo-card-wide > .mdl-card__supporting-text {
+                height:100%;
+              }
                 .mdl-layout {
                   align-items: center;
                   justify-content: top;
@@ -18,6 +333,46 @@
             </style>
         </head>
         <body>
+          <ul id = "dropdown" class = "dropdown-content">
+            <li><a href="https://faipspanorama.github.io/iframe-elements/editorial/A_main-ifradxc.html">Editorial Articles</a></li>
+            <li><a href="https://faipspanorama.github.io/carousel.html">Competition Reports</a></li>
+            <li><a href="https://faipspanorama.github.io/iframe-elements/article/A_main-ifradxc.html">English</a></li>
+            <li><a href="https://faipspanorama.github.io/iframe-elements/hindi/A_main-ifradxc.html">Hindi</a></li>
+            <li><a href="https://faipspanorama.github.io/iframe-elements/french/A_main-ifradxc.html">French</a></li>
+            </ul>
+          <nav>
+            <div class="nav-wrapper" style="padding-top: -10%;padding-bottom: -10%;padding-left: -10%;">
+              <img src = "https://i.imgur.com/hYImBg2.png" width=36 height=36>
+              <a href="#" class="brand-logo" >Panorama</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down" style="justify-content: center;">
+              <li><a href="indexhtml"></a></li>
+              <li><a href="articles.html"></a></li>
+              <li><a href="poetry.html"></a></li>
+              <li><a href="edu.html"></a></li>
+              <li><a href="About.html"></a></li>
+              <li><a href="indexhtml"></a></li>
+              <li><a href="articles.html"></a></li>
+              <li><a href="poetry.html"></a></li>
+              <li><a href="edu.html"></a></li>
+              <li><a href="About.html"></a></li>
+              <li><a href="indexhtml"></a></li>
+              <li><a href="articles.html"></a></li>
+              <li><a href="poetry.html"></a></li>
+              <li><a href="edu.html"></a></li>
+              <li><a href="About.html"></a></li>
+              <li><a href="indexhtml"></a></li>
+              <li><a href="articles.html"></a></li>
+              <li><a href="poetry.html"></a></li>
+              <li><a href="edu.html"></a></li>
+              <li><a href="About.html"></a></li>
+              <li><a class = "btn dropdown-button" href="https://faipspanorama.github.io/" style="background-color: #1d2371;">Home</a></li>
+              <li><a class = "btn dropdown-button" data-activates = "dropdown" style="background-color: #1d2371;" st>Articles</a></li>
+              <li><a class = "btn dropdown-button" href="https://faipspanorama.github.io/iframe-elements/poem/A_main-ifradxc.html" style="background-color: #1d2371;">Poetry</a></li>
+              <li><a class = "btn dropdown-button" href="https://faipspanorama.github.io/iframe-elements/interviews/A_main-ifradxc.html" style="background-color: #1d2371;">Interviews</a></li>
+              
+              </ul>
+            </div>
+            </nav>
           <div class="mdl-layout">
             <br><br>
 <div class="demo-card-wide mdl-card mdl-shadow--2dp through mdl-shadow--16dp" id="music"><div class="mdl-card__supporting-text"><iframe src="amazing-and-interesting.html"  height="100%"></iframe></div><div class="mdl-card__actions mdl-card--border"><a target="_blank" href="amazing-and-interesting.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">View Article</a></div></div>
@@ -26,4 +381,41 @@
 <div class="demo-card-wide mdl-card mdl-shadow--2dp through mdl-shadow--16dp" id="music"><div class="mdl-card__supporting-text"><iframe src="facts-countries-of-world.html"  height="100%"></iframe></div><div class="mdl-card__actions mdl-card--border"><a target="_blank" href="facts-countries-of-world.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">View Article</a></div></div>
 <div class="demo-card-wide mdl-card mdl-shadow--2dp through mdl-shadow--16dp" id="music"><div class="mdl-card__supporting-text"><iframe src="fun-facts.html"  height="100%"></iframe></div><div class="mdl-card__actions mdl-card--border"><a target="_blank" href="fun-facts.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">View Article</a></div></div>
 <div class="demo-card-wide mdl-card mdl-shadow--2dp through mdl-shadow--16dp" id="music"><div class="mdl-card__supporting-text"><iframe src="riddles.html"  height="100%"></iframe></div><div class="mdl-card__actions mdl-card--border"><a target="_blank" href="riddles.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">View Article</a></div></div>
-</div></body></html>
+</div>
+<footer class="footer-distributed">
+ 
+  <div class="footer-left">
+
+    <img src="https://i.imgur.com/hYImBg2.png" alignment="middle"><h3>Panorama</h3>
+
+  
+
+  <p class="footer-company-name">thefaipspanorama &copy; 2020</p>
+  </div>
+
+  <div class="footer-center">
+    <div>
+      <p><span>Project Management</span> Aaminah Alam</p>
+    </div>
+    <br>
+    <div>
+      <p><span>Website Design and Development</span> Mishaal Kandapath & Aaditya Rengarajan</p>
+    </div>
+    <br>
+    <div>
+      <p><span>Graphics & Digital Art</span> Shreesh Anantharaj</p>
+    </div>
+    <br>
+  <div>
+  <p><span>PDF Production</span> Shreesh Anantharaj, Roma Kondereddy & Aaditya Rengarajan</p>
+  </div>
+  <br>
+
+  </div>
+
+  <div class="footer-right">
+
+  </div>
+
+  </footer>
+</body></html>
