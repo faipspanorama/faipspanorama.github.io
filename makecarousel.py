@@ -1,5 +1,8 @@
-file=open('carousellinks.txt')
-lines=file.readlines()
+import os
+import easygui
+
+direc="carousel-pictures"
+pref="./"+str(direc)+"/"
 print('''<!DOCTYPE html>
   <!--[if IEMobile 7]><html class="no-js ie iem7" lang="en" dir="ltr"><![endif]-->
   <!--[if lte IE 6]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
@@ -14,36 +17,36 @@ print('''<!DOCTYPE html>
 <title>FAIPS PANAROMA</title>
 <link type="text/css" rel="stylesheet" href="sites/g/files/aaj5321/f/css/css_BTbypzlNYVbptuza8qzKwXCnB4TjuEzUY43Cz2FsXVA.html" media="all" />
 <link type="text/css" rel="stylesheet" href="./css/styles.css" media="all" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css" />
-	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css" />
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
 <style>
-			.mdl-layout {
-		  align-items: center;
-		  justify-content: top;
-		}
-	.l-region--banner{width:100%;}.l-region--banner:not(.slick-initialized) > *{width:100%;float:left;}
-		#style-1::-webkit-scrollbar-track
-		{
-			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-			border-radius: 5px;
-			background-color: #F5F5F5;
-		}
+      .mdl-layout {
+      align-items: center;
+      justify-content: top;
+    }
+  .l-region--banner{width:100%;}.l-region--banner:not(.slick-initialized) > *{width:100%;float:left;}
+    #style-1::-webkit-scrollbar-track
+    {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 5px;
+      background-color: #F5F5F5;
+    }
 
-		#style-1::-webkit-scrollbar
-		{
-			width: 5px;
-			background-color: #F5F5F5;
-		}
+    #style-1::-webkit-scrollbar
+    {
+      width: 5px;
+      background-color: #F5F5F5;
+    }
 
-		#style-1::-webkit-scrollbar-thumb
-		{
-			border-radius: 10px;
-			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-			background-color: #555;
-		}
-		iframe {
+    #style-1::-webkit-scrollbar-thumb
+    {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: #555;
+    }
+    iframe {
   background-color: white;
   border:20px solid white;
   box-shadow: 2px 2px 5px white;
@@ -67,37 +70,38 @@ ga("set", {"dimension18": "drupal"});(function(){ function getCookie(t){for(var 
     <div id="block-views-all-content-all-content-block" class="block block--views block--views-all-content-all-content-block delta--all-content-all-content-block">
         <div class="block__content">
     <div  data-view-id="all_content" data-view-display-id="all_content_block" data-view-name="All Content" data-dom-id="82b062d308971d78afdf3a95fbec161c" class="view view-all-content view-id-all_content view-display-id-all_content_block moodboard view-dom-id-82b062d308971d78afdf3a95fbec161c view-bolero view-style--row-unwrapped views-view-mode-listing">
-				
+        
   
-	  <div class="view-content">		<article   about="/photos/heartless7" typeof="sioc:Item foaf:Document" data-nid="34246" data-title="Heartless7" data-view-mode="listing" data-alias="/photos/heartless7" class="ds-bolero-grid l-grid node node--photo views-row views-row-1 views-row-odd views-row-first view-mode-listing  node--listing node--photo--listing gallery--heartless gallery-heartless clearfix">
+    <div class="view-content">    <article   about="/photos/heartless7" typeof="sioc:Item foaf:Document" data-nid="34246" data-title="Heartless7" data-view-mode="listing" data-alias="/photos/heartless7" class="ds-bolero-grid l-grid node node--photo views-row views-row-1 views-row-odd views-row-first view-mode-listing  node--listing node--photo--listing gallery--heartless gallery-heartless clearfix">
   <a href="some=article.html" target="_blank">
-	<section class="l-front">
-  		<div class="ds-region--background  ds-region ">
-			<div class="field field--name-field-photo field--type-image field--label-hidden"><div class="field__items"><div class="field__item"><picture >
+  <section class="l-front">
+      <div class="ds-region--background  ds-region ">
+      <div class="field field--name-field-photo field--type-image field--label-hidden"><div class="field__items"><div class="field__item"><picture >
 
 <iframe  src="some-article.html" style="overflow: hidden;"/></iframe>
 
-</picture></div></div></div>		</div>
-    		</section>
+</picture></div></div></div>    </div>
+        </section>
 </a>
   </article>
 
 ''')
 
-for i in lines:
-	print('''
+for i in os.listdir(direc):
+  a=str(pref)+str(i)
+  print('''
 <article   about="/photos/heartless5" typeof="sioc:Item foaf:Document" data-nid="34236" data-title="Heartless5" data-view-mode="listing" data-alias="/photos/heartless5" class="ds-bolero-grid l-grid node node--photo views-row views-row-3 views-row-odd view-mode-listing  node--listing node--photo--listing gallery--heartless gallery-heartless clearfix">
   
-	<section class="l-front">
-  		<div class="ds-region--background  ds-region ">
-			<div class="field field--name-field-photo field--type-image field--label-hidden"><div class="field__items"><div class="field__item"><picture >
+  <section class="l-front">
+      <div class="ds-region--background  ds-region ">
+      <div class="field field--name-field-photo field--type-image field--label-hidden"><div class="field__items"><div class="field__item"><picture >
 <!--[if IE 9]><video style="display: none;"><![endif]-->
-<source srcset="'''+str(i)+'''" media="(max-width: 100px)" />
-<source srcset="'''+str(i)+'''" media="(min-width: 100px)" />
+<source srcset="'''+str(a)+'''" media="(max-width: 100px)" />
+<source srcset="'''+str(a)+'''" media="(min-width: 100px)" />
 <!--[if IE 9]></video><![endif]-->
-<img  src="'''+str(i)+'''" width=100px media="(max-width: 100px)"/>
-</picture></div></div></div>		</div>
-    		</section>
+<img  src="'''+str(a)+'''" width=100px media="(max-width: 100px)"/>
+</picture></div></div></div>    </div>
+        </section>
 
   </article>''')
 
@@ -118,11 +122,11 @@ print('''
   </article>
 
 
-  </div>	
-	
-	
-	
-	</div>  </div>
+  </div>  
+  
+  
+  
+  </div>  </div>
 </div>
   </section>
 
