@@ -14,13 +14,6 @@
 		<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
 		<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 	    <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
-	<script type="text/javascript">
-  	  $(window).on('load resize',function(){
-  	      if($(window).width() < 5){
-   	         window.location = "https://www.google.com"
-    	    }
-    });
-</script>
 <script>
 						 			$("#slideshow > div:gt(0)").hide();
 
@@ -422,8 +415,10 @@
 					<div class="foot">Panorama</div><br>
 			</div>
 		</div>
-		 <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/blog/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--white">View Source</a>
-		<a class="waves-effect waves-light btn" id="pdf">button</a>
+		 <div class="fixed-action-btn">
+  <a class="btn-floating btn-large red">
+    VIEW PDF
+  </a>
 		<footer class="footer-distributed">
  
 			<div class="footer-left">
